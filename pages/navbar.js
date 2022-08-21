@@ -23,7 +23,7 @@ const Navbar = () => {
 	}, []);
 	return (
 		<div>
-			<div className={shadowMe ? ' fixed w-full h-20 shadow-lg shadow-gray-900  bg-black/40 border-b-[1px] border-t-orange-700 z-[100]' : 'fixed w-full h-20  bg-black/40 border-b-[1px] border-t-orange-700 z-[100]'}>
+			<div className={shadowMe ? 'w-full h-20 shadow-lg shadow-gray-900  bg-black/40 border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-black/40 border-b-[1px] border-t-orange-700 z-[100]'}>
 				<div className='h-full w-full flex justify-between text-slate-300 px-4'>
 					<div className='h-full flex justify-start items-center flex-1 '>
 						<span className=' text-2xl'>Fast-Bite</span>

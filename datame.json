@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"kamal",
+        "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
+    },{
+        "id":2,
+        "name":"salam",
+      "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
+    },{
+        "id":3,
+        "name":"Rafiq",
+      "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
+    },{
+        "id":4,
+        "name":"Jabbar molla",
+       "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
+    },{
+        "id":5,
+        "name":"sumon patwary",
+       "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
+    }
+]
