@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import data from '../datame.json';
+
+// const [myData, setMydata] = useState(data.slice(0, 50));
 
 import { FaAlignJustify, FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { GrLocation } from 'react-icons/gr';
 import { MdOutlineWatchLater } from 'react-icons/md';
+
+//  pagenation logic
+
+// const [myData, setrMydata] = useState(data.slice(0, 50));
+// const [pageNumber, setPageNumber] = useState(0);
+// const userPerPage = 10;
+// const pageVisitade = pageNumber + userPerPage;
+// const displayUser = myData.slice(pageVisitade, pageVisitade + userPerPage);
+
+// end pagenation logic
+
 const Main = () => {
 	return (
 		<div>

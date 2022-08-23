@@ -29,5 +29,11 @@
        "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
         "imge":"./img/alea.jpg"
+    },{
+        "id":5,
+        "name":"Vukal gts",
+       "location":"Dhaka Bangladesh",
+        "joined":"Joined On:July 26th, 2022",
+        "imge":"./img/alea.jpg"
     }
 ]
