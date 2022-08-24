@@ -3,7 +3,9 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Footer from './footer';
 import Main from './main';
+import MainTwo from './mainTwo';
 import Navbar from './navbar';
+import SearchField from './searchField';
 
 export default function Home() {
 	return (
@@ -15,7 +17,9 @@ export default function Home() {
 			</Head>
 
 			<Navbar></Navbar>
-			<Main></Main>
+			{/* <Main></Main> */}
+			<SearchField></SearchField>
+			<MainTwo></MainTwo>
 			<Footer></Footer>
 		</div>
 	);
