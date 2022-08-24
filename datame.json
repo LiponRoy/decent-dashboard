@@ -1,46 +1,39 @@
 [
     {
         "id":1,
-        "name":"kamal",
+        "name":"Maksudul Hasan",
         "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/hasan.png"
     },{
         "id":2,
-        "name":"salam",
+        "name":"Rafez Hossain",
       "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/hossain.png"
     },{
         "id":3,
-        "name":"Rafiq",
+        "name":"Jonathan Smith",
       "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/smith.png"
     },{
         "id":4,
-        "name":"Jabbar molla",
+        "name":"Neymar Jr.",
        "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/neymar.png"
     },{
         "id":5,
-        "name":"sumon patwary",
+        "name":"John Sina",
        "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/sina.png"
     },{
-        "id":6,
-        "name":"Vukal gts",
+        "id":5,
+        "name":"John Doe",
        "location":"Dhaka Bangladesh",
         "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
-    }
-    ,{
-        "id":7,
-        "name":"Bikal bela ++",
-       "location":"Dhaka Bangladesh",
-        "joined":"Joined On:July 26th, 2022",
-        "imge":"./img/alea.jpg"
+        "img":"./img/doe.png"
     }
 ]

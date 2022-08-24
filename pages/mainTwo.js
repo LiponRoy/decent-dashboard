@@ -28,13 +28,13 @@ const MainTwo = () => {
 	// end pagenation logic
 	return (
 		<div>
-			<div className='m-6 mx-36'>
-				<div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6'>
+			<div className='m-2 md:m-6 mx-8 md:mx-36'>
+				<div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2  lg:gap-4 xl:gap-6'>
 					{displayUser.map((value, index) => (
-						<div className=' w-full h-96 bg-primaryColor fcc'>
+						<div className='w-full h-96 bg-primaryColor fcc'>
 							<div class='avatar'>
-								<div class=' w-32 rounded-full '>
-									<img src={value.imge} />
+								<div class=' w-24 lg:w-24 xl:w-32 rounded-full '>
+									<img src={value.img} />
 								</div>
 							</div>
 							<span className=' text-2xl font-bold my-2'>{value.name}</span>
@@ -72,7 +72,7 @@ const MainTwo = () => {
 			</div>
 
 			<div className=' mx-36 pageCounterMe'>
-				<ReactPaginate nextLabel='next >' onPageChange={handlePageClick} pageCount={perPageCount} previousLabel='< previous' containerClassName={'paginationBttns'} previousLinkClassName={'previousBttn'} nextLinkClassName={'nextBttn'} disabledClassName={'paginationDisabled'} activeClassName={'paginationActive'} />
+				<ReactPaginate nextLabel='next >' onPageChange={handlePageClick} breakLabel='...' pageRangeDisplayed={2} marginPagesDisplayed={3} pageCount={perPageCount} previousLabel='< previous' containerClassName={'paginationBttns'} previousLinkClassName={'previousBttn'} nextLinkClassName={'nextBttn'} disabledClassName={'paginationDisabled'} activeClassName={'paginationActive'} />
 			</div>
 		</div>
 	);
