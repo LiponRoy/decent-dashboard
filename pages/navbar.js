@@ -25,7 +25,7 @@ const Navbar = () => {
 	}, []);
 	return (
 		<div>
-			<div className={shadowMe ? ' w-full h-20 shadow-lg shadow-gray-900 bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]'}>
+			<div className={shadowMe ? ' w-full h-20 shadow-lg shadow-gray-900 dark:bg-slate-800 bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]'}>
 				<div className='m-2 md:m-6 md:mx-36 h-full'>
 					<div className='h-full w-full flex justify-between  px-4'>
 						<div className='h-full flex justify-start items-center flex-1 '>
@@ -67,7 +67,7 @@ const Navbar = () => {
 						</div>
 					</div>
 					{/* // sidebar */}
-					<div className={sideBar ? 'md:hidden absolute left-0 top-[5rem] w-full h-screen bg-slate-700   ease-in duration-300 z-40 fcc' : 'fixed left-[-25%] top-[70px] w-[25%] h-screen bg-slate-700 ease-in duration-300 z-40 fcc'}>
+					<div className={sideBar ? 'md:hidden absolute left-0 top-[5rem] w-full h-[50%] bg-secondaryColor   ease-in duration-300 z-40 fcc' : 'fixed left-[-25%] top-[70px] w-[25%] h-[50%] bg-secondaryColor  ease-in duration-300 z-40 fcc'}>
 						<Link href='/#heading'>
 							<span onClick={sideMe} className=' cursor-pointer text-white text-2xl'>
 								Dashboard

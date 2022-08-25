@@ -110,3 +110,20 @@ html {
   position: absolute;
   right: -90px;
 }
+
+@media (max-width:767px){
+  .paginationBttns a {
+      color: #b00606;
+
+    }
+        .previousBttn {
+          display: none;
+    
+        }
+    
+        .nextBttn {
+        display: none;
+          
+        }
+               
+}
