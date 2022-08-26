@@ -8,6 +8,10 @@ module.exports = {
 				primaryColor: '#F7F7F8',
 				secondaryColor: '#564FB1',
 				hoverColor: '#202124',
+
+				darkBodyColor: '#050405',
+				darkBgColor: '#17181B',
+				darkTextColor: '#5E6D7B',
 			},
 		},
 	},

@@ -2,9 +2,10 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { FaAlignJustify, FaRegWindowClose } from 'react-icons/fa';
 import { HiSun } from 'react-icons/hi';
+import { HiMoon } from 'react-icons/hi';
 import { FiBell } from 'react-icons/fi';
 
-const Navbar = () => {
+const Navbar = ({ darkMode, dark }) => {
 	const [shadowMe, setShadow] = useState(false);
 	const [sideBar, setSidebar] = useState(false);
 
@@ -25,13 +26,13 @@ const Navbar = () => {
 	}, []);
 	return (
 		<div>
-			<div className={shadowMe ? ' w-full h-20 shadow-lg shadow-gray-900 dark:bg-slate-800 bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]'}>
-				<div className='m-2 md:m-6 md:mx-36 h-full'>
+			<div className={dark ? ' w-full h-20 shadow-lg bg-darkBgColor text-white border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]'}>
+				<div className='mx-2 md:mx-6 md:mx-36 h-full'>
 					<div className='h-full w-full flex justify-between  px-4'>
 						<div className='h-full flex justify-start items-center flex-1 '>
 							<div className='flex justify-center items-center'>
-								<img src='./img/logo.png' alt='no img' srcset='' />
-								<span className='text-sm md:text-2xl'>Hypescout</span>
+								<img src={`${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' srcset='' />
+								<span className='text-sm md:text-2xl ml-2'>Hypescout</span>
 							</div>
 						</div>
 						<div className=' hidden md:flex justify-center items-center flex-1 h-full gap-4 '>
@@ -51,7 +52,8 @@ const Navbar = () => {
 						<div className=' h-full flex justify-end items-center flex-1 gap-4 '>
 							<div className='flex justify-center items-center'>
 								<FiBell size={25} className='m-2'></FiBell>
-								<HiSun size={25} className='m-2'></HiSun>
+								{dark ? <HiMoon onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiMoon> : <HiSun onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiSun>}
+
 								<span className=' text-sm md:text-lg'>Hi,Rakib</span>
 								<div class='avatar ml-6'>
 									<div class=' w-10 rounded-xl '>

@@ -78,7 +78,7 @@ html {
   
      
 
-  color: #060606;
+  color: #525252;
   cursor: pointer;
   /* background-color: brown; */
 }
@@ -90,7 +90,7 @@ html {
 
 .paginationActive a {
   color: white;
-  background-color: #000000;
+  background-color: #545454;
 }
 
 .paginationDisabled a {
@@ -113,17 +113,20 @@ html {
 
 @media (max-width:767px){
   .paginationBttns a {
-      color: #b00606;
+    
 
     }
-        .previousBttn {
-          display: none;
-    
-        }
-    
-        .nextBttn {
-        display: none;
-          
-        }
+                .previousBttn {
+                  position: absolute;
+                  left: 10px;
+        
+                  /* background-color: coral; */
+        
+                }
+        
+                .nextBttn {
+                  position: absolute;
+                  right: -68px;
+                }
                
 }
