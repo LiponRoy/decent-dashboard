@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css';
 
 import { FaAlignJustify, FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { GrLocation } from 'react-icons/gr';
-import { MdOutlineWatchLater } from 'react-icons/md';
+import { MdOutlineWatchLater, MdOutlineLocationOn } from 'react-icons/md';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import ReactPaginate from 'react-paginate';
 
@@ -40,7 +40,7 @@ const Main = ({ dark }) => {
 								</div>
 								<span className={`text-2xl font-bold my-2 ${dark ? ' text-white' : ' text-black'}`}>{value.name}</span>
 								<div className=' flex flex-row items-center'>
-									<GrLocation className={dark ? ' mr-2 ' : ' mr-2'} size={25}></GrLocation>
+									<MdOutlineLocationOn className={dark ? ' mr-2 ' : ' mr-2'} size={28}></MdOutlineLocationOn>
 									<span>{value.location}</span>
 								</div>
 								<div className=' flex flex-row items-center'>

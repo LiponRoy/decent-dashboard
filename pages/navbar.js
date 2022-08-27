@@ -25,17 +25,17 @@ const Navbar = ({ darkMode, dark }) => {
 		window.addEventListener('scroll', handleShadow);
 	}, []);
 	return (
-		<div>
-			<div className={dark ? ' w-full h-20 shadow-lg bg-darkBgColor text-white border-b-[1px] border-t-orange-700 z-[100]' : 'w-full h-20  bg-primaryColor text-black border-b-[1px] border-t-orange-700 z-[100]'}>
-				<div className='mx-2 md:mx-6 md:mx-36 h-full'>
-					<div className='h-full w-full flex justify-between  px-4'>
-						<div className='h-full flex justify-start items-center flex-1 '>
+		<div className='w-full h-20 '>
+			<div className={dark ? ' shadow-lg bg-darkBgColor text-white z-[100]' : ' bg-primaryColor text-black  z-[100]'}>
+				<div className=' h-full '>
+					<div className='h-full w-full flex justify-between  p-2'>
+						<div className='h-full flex justify-start items-center '>
 							<div className='flex justify-center items-center'>
 								<img src={`${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' srcset='' />
 								<span className='text-sm md:text-2xl ml-2'>Hypescout</span>
 							</div>
 						</div>
-						<div className=' hidden md:flex justify-center items-center flex-1 h-full gap-4 '>
+						<div className=' hidden md:flex justify-center items-center  h-full gap-4 '>
 							<Link href='/#heading'>
 								<span className=' cursor-pointer hover:text-white hover:bg-slate-800 hover:p-2 hover:rounded-lg text-sm m-2'>Dashboard</span>
 							</Link>
@@ -49,7 +49,7 @@ const Navbar = ({ darkMode, dark }) => {
 								<span className=' cursor-pointer hover:text-white hover:bg-slate-800 hover:p-2 hover:rounded-lg text-sm m-2'>Insights</span>
 							</Link>
 						</div>
-						<div className=' h-full flex justify-end items-center flex-1 gap-4 '>
+						<div className=' h-full flex justify-end items-center  gap-4 '>
 							<div className='flex justify-center items-center'>
 								<FiBell size={25} className='m-2'></FiBell>
 								{dark ? <HiMoon onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiMoon> : <HiSun onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiSun>}
@@ -60,7 +60,7 @@ const Navbar = ({ darkMode, dark }) => {
 										<img src='./img/rakib.png' />
 									</div>
 								</div>
-								<div className='md:hidden m-2'>
+								<div className='md:hidden '>
 									<span onClick={sideMe} className=' cursor-pointer  text-2xl'>
 										{sideBar ? <FaRegWindowClose></FaRegWindowClose> : <FaAlignJustify></FaAlignJustify>}
 									</span>
