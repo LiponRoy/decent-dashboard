@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaAlignJustify, FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { BiCopyright } from 'react-icons/bi';
+import Image from 'next/image';
 
 const Footer = ({ dark }) => {
 	return (
@@ -8,7 +9,7 @@ const Footer = ({ dark }) => {
 			<div className=' md:hidden company flex justify-center items-start '>
 				<div className='flex flex-col items-center md:items-start text-center md:text-left'>
 					<div className='flex justify-center items-center'>
-						<img src={`${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' srcset='' />
+						<Image src={`/${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' width={25} height={25} />
 						<span className='text-sm md:text-2xl ml-2'>Hypescout</span>
 					</div>
 					<span className=' my-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam obcaecati assumenda natus eaque inventore laborum cupiditate esse impedit.</span>
@@ -24,7 +25,8 @@ const Footer = ({ dark }) => {
 				<div className='hidden company md:flex justify-center items-start '>
 					<div className='flex flex-col items-center md:items-start text-center md:text-left'>
 						<div className='flex justify-center items-center'>
-							<img src={`${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' srcset='' />
+							<Image src={`/${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' width={25} height={25} />
+
 							<span className={`text-sm md:text-2xl ml-2 ${dark && 'text-white'}`}>Hypescout</span>
 						</div>
 						<span className=' my-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam obcaecati assumenda natus eaque inventore laborum cupiditate esse impedit.</span>

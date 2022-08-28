@@ -9,6 +9,7 @@ import { GrLocation } from 'react-icons/gr';
 import { MdOutlineWatchLater, MdOutlineLocationOn } from 'react-icons/md';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import ReactPaginate from 'react-paginate';
+import Image from 'next/image';
 
 const Main = ({ dark }) => {
 	//  pagenation logic
@@ -31,11 +32,11 @@ const Main = ({ dark }) => {
 			<div className='m-2 md:m-6 mx-8 md:mx-36 '>
 				<div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2  lg:gap-4 xl:gap-6'>
 					{displayUser.map((value, index) => (
-						<div className={dark ? ' bg-darkBgColor text-darkTextColor' : 'bg-primaryColor  text-black'}>
+						<div key={index} className={dark ? ' bg-darkBgColor text-darkTextColor' : 'bg-primaryColor  text-black'}>
 							<div className='w-full h-96  fcc'>
-								<div class='avatar'>
-									<div class=' w-24 lg:w-24 xl:w-32 rounded-full '>
-										<img src={value.img} />
+								<div className='avatar'>
+									<div className=' w-24 lg:w-24 xl:w-32 rounded-full '>
+										<Image src={`/${value.img}`} width={'150px'} height={'150px'} />
 									</div>
 								</div>
 								<span className={`text-2xl font-bold my-2 ${dark ? ' text-white' : ' text-black'}`}>{value.name}</span>

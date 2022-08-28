@@ -4,6 +4,7 @@ import { FaAlignJustify, FaRegWindowClose } from 'react-icons/fa';
 import { HiSun } from 'react-icons/hi';
 import { HiMoon } from 'react-icons/hi';
 import { FiBell } from 'react-icons/fi';
+import Image from 'next/image';
 
 const Navbar = ({ darkMode, dark }) => {
 	const [shadowMe, setShadow] = useState(false);
@@ -26,12 +27,12 @@ const Navbar = ({ darkMode, dark }) => {
 	}, []);
 	return (
 		<div className='w-full h-20 '>
-			<div className={dark ? ' shadow-lg bg-darkBgColor text-white z-[100]' : ' bg-primaryColor text-black  z-[100]'}>
+			<div className={dark ? ' bg-darkBgColor text-white z-[100]' : ' bg-primaryColor text-black  z-[100]'}>
 				<div className=' h-full '>
 					<div className='h-full w-full flex justify-between  p-2'>
-						<div className='h-full flex justify-start items-center '>
-							<div className='flex justify-center items-center'>
-								<img src={`${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' srcset='' />
+						<div className='h-full flex justify-center items-center '>
+							<div className='flex justify-center items-center mt-2 '>
+								<Image src={`/${dark ? './img/logo2.png' : './img/logo.png'}`} alt='no img' width={21} height={21} />
 								<span className='text-sm md:text-2xl ml-2'>Hypescout</span>
 							</div>
 						</div>
@@ -55,9 +56,9 @@ const Navbar = ({ darkMode, dark }) => {
 								{dark ? <HiMoon onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiMoon> : <HiSun onClick={darkMode} size={25} className='m-2 cursor-pointer'></HiSun>}
 
 								<span className=' text-sm md:text-lg'>Hi,Rakib</span>
-								<div class='avatar ml-6'>
-									<div class=' w-10 rounded-xl '>
-										<img src='./img/rakib.png' />
+								<div className='avatar ml-6'>
+									<div className=' w-10 rounded-xl '>
+										<Image src={`/./img/rakib.png`} width={15} height={15} />
 									</div>
 								</div>
 								<div className='md:hidden '>
